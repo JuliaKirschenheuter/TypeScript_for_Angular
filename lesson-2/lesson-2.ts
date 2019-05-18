@@ -61,14 +61,19 @@ average(1, 2, 3);*/
 // type stringOrNumber = string | number;
 
 
+// СТРАЖ ТИПА
+
 // function isString(val: stringOrNumber): val is string {
 //     return typeof val === 'string';
 // }
 //
-// //
+
+// ПЕРЕГРУЗКА
+
 // function average(a: number, b: number): string;
 // function average(a: string, b: number, c: number): string;
 // function average(a: number, b: string): number;
+// сигнатура имплементации
 // function average(_a: stringOrNumber, _b: stringOrNumber, _c?: number): stringOrNumber {
 //     // Without true implementation
 //
@@ -97,7 +102,7 @@ average(1, 2, 3);*/
 //         protected y: number,
 //         private z: number,
 //     ) {
-//
+//         this.x = 1;
 //     }
 //
 //     public sum(): number {
@@ -144,7 +149,7 @@ average(1, 2, 3);*/
 //     }
 // }
 //
-// const a = new AbstractPoint()
+// const a = new AbstractPoint() // не сработает тк абстрактный класс
 // class Point extends AbstractPoint {
 //     public y: number = 2;
 //

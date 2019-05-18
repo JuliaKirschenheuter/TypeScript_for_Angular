@@ -1,5 +1,6 @@
 {
     "rules": {
+        // TypeScript Specific
         "member-access": [
             true,
             "check-accessor",
@@ -27,16 +28,13 @@
         "no-internal-module": true,
         "no-var-requires": false,
         "typedef": [
-            true,
+            false,
             "call-signature",
-            "arrow-call-signature",
             "parameter",
             "arrow-parameter",
             "property-declaration",
             "variable-declaration",
-            "member-variable-declaration",
-            "object-destructuring",
-            "array-destructuring"
+            "member-variable-declaration"
         ],
         "typedef-whitespace": [
             true,
@@ -74,7 +72,7 @@
         ],
         "max-file-line-count": [
             true,
-            2000
+            400
         ],
         "max-line-length": [
             true,
@@ -84,7 +82,7 @@
             true,
             2
         ],
-        "no-default-export": true,
+        "no-default-export": false,
         "prefer-const": true,
         "array-type": [
             true,
@@ -105,7 +103,7 @@
             true
         ],
         "variable-name": [
-            true,
+            false,
             "ban-keywords",
             "check-format",
             "allow-leading-underscore",
@@ -124,7 +122,7 @@
             "parameters"
         ],
         "no-eval": true,
-        "no-trailing-whitespace": true,
+        "no-trailing-whitespace": false,
         "no-unsafe-finally": true,
         "one-line": [
             true,
@@ -147,7 +145,7 @@
             true
         ],
         "whitespace": [
-            true,
+            false,
             "check-branch",
             "check-decl",
             "check-operator",
